@@ -17,4 +17,4 @@ for env in variables.split('\n'):
     if env not in whitelisted_vars and env != '' and not re.match(r'^\s?#', env):
         print("""          <variable name="{key}">
             <value>{value}</value>
-          </variable>""".format(key=env, value=os.environ.get(env, None)))
+          </variable>""".format(key=env, value=os.environ.get(env, "")))
