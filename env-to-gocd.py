@@ -8,7 +8,8 @@ whitelisted_vars = [
     "AWS_ACCESS_KEY_ID",
     "AWS_SECURITY_TOKEN",
     "AWS_PROFILE",
-    "AWS_DEFAULT_REGION"
+    "AWS_DEFAULT_REGION",
+    "BUILD_VERSION"
 ]
 
 for env in variables.split('\n'):
